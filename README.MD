@@ -16,7 +16,7 @@ The lab is configured on a **private virtual network** so that additional machin
 
 ![Title Overview](1-screenshot-title-image.png)
 
-
+---
 ## 🎯 **Objectives**
 
 The main objectives of this project are to:
@@ -29,7 +29,7 @@ The main objectives of this project are to:
 *   **Take a clean VM snapshot for recovery.**
 
 
-
+---
 ## 🔵 **Purpose of the Lab**
 
 The lab provides an **isolated and controlled environment** for cybersecurity learning and authorized security testing. It can be used for activities such as:
@@ -44,7 +44,7 @@ The lab provides an **isolated and controlled environment** for cybersecurity le
 ⚠️ **Important:** This laboratory must only be used for systems that you own or have explicit permission to test. Do not use the lab or its tools to attack unauthorized systems.
 
 
-
+---
 ## 🏗️ **Lab Architecture**
 
 ### **Hypervisor: VirtualBox**
@@ -64,7 +64,7 @@ The lab provides an **isolated and controlled environment** for cybersecurity le
 | **DNS Server** | **`8.8.8.8`** |
 
 
-
+---
 ## 🛠️ **Lab Setup Procedure**
 
 ### **Step 1. Install 7-Zip**
@@ -183,9 +183,9 @@ This laboratory is intended strictly for **education purposes only**.
 
 ## 👤 **Author**
 
-*   **Waqas Karim**
-*   **Cybersecurity Professional B082**
-*   **LinkedIn:** [linkedin.com/in/waqaskarim/](https://www.linkedin.com/in/waqaskarim/)
+*   **Yvette Ayitey**
+*   **Cybersecurity Professional B084D**
+*   **LinkedIn:**[https://www.linkedin.com/in/yvette-ayitey-112a29344?utm_source=share_via&utm_content=profile&utm_medium=member_android]
 
 ---
 
