@@ -105,7 +105,7 @@ The lab provides an **isolated and controlled environment** for cybersecurity le
 
 ### **Step 6. Create a Clean VM Snapshot**
 *   After completing the initial configuration, a VirtualBox snapshot was created.
-*   **Example snapshot name:** **`Clean Kali - Network Setup`**
+*   **Example snapshot name:** **`fresh-Kali - Network Setup`**
 *   The snapshot represents the **clean baseline** of the laboratory. If a future exercise changes or damages the VM configuration, the machine can be restored to this baseline.
 
 ---
