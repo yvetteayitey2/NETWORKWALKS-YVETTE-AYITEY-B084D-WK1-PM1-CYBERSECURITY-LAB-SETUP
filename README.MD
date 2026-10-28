@@ -14,7 +14,7 @@ The purpose of the lab is to create a **controlled environment** where cybersecu
 
 The lab is configured on a **private virtual network** so that additional machines can be added later and used as targets for authorized security testing.
 
-![Title Overview](1-screenshot-title-image.png)
+![Title Overview](1-Screenshot-title-image.png.png)
 
 ---
 ## 🎯 **Objectives**
@@ -82,7 +82,7 @@ The lab provides an **isolated and controlled environment** for cybersecurity le
     *   **DHCP:** `Enabled` 
     *   **IPv6:** `Disabled`
 
-![Network Settings](2-Screenshot-network-settings-1.png)
+![Network Settings](2-Screenshot-network-settings-1.png.png)
 
 ### **Step 4. Import Kali Linux**
 *   The **Kali Linux virtual machine** was downloaded from the official Kali Linux website and imported into VirtualBox.
@@ -91,7 +91,7 @@ The lab provides an **isolated and controlled environment** for cybersecurity le
     *   **Adapter Type:** **Intel PRO/1000 MT Desktop**
 *   The VM was allocated **2048 MB RAM**.
 
-![Kali Linux Desktop](3-Screenshot-kali-linux.png)
+![Kali Linux Desktop](3-Screenshot-kali-linux.png.png)
 
 ### **Step 5. Configure the Kali Linux Network**
 *   The **Kali Linux network configuration** was checked and configured with a **consistent IPv4 address**.
@@ -101,7 +101,7 @@ The lab provides an **isolated and controlled environment** for cybersecurity le
     *   **Gateway:** `10.0.0.1`
     *   **DNS:** `8.8.8.8`
 
-![Kali Network Settings](4-Screenshot-kali-network-settings.png)
+![Kali Network Settings](4-Screenshot-kali-network-settings.png.png)
 
 ### **Step 6. Create a Clean VM Snapshot**
 *   After completing the initial configuration, a VirtualBox snapshot was created.
