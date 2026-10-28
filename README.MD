@@ -82,7 +82,7 @@ The lab provides an **isolated and controlled environment** for cybersecurity le
     *   **DHCP:** `Enabled` 
     *   **IPv6:** `Disabled`
 
-![Network Settings]2-Screenshot -network-settings-1.png.png
+![Network Settings](2-Screenshot-network-settings-1.png)
 
 ### **Step 4. Import Kali Linux**
 *   The **Kali Linux virtual machine** was downloaded from the official Kali Linux website and imported into VirtualBox.
