@@ -5,44 +5,44 @@ Building an isolated virtual lab for penetration testing and ethical hacking pra
 ![Skill: Cybersecurity](https://img.shields.io/badge/Skill-Cybersecurity-red?style=flat-square) ![Ver: VirtualBox v7.2](https://img.shields.io/badge/Ver-VirtualBox_v7.2-blue?style=flat-square) ![OS: Kali Linux](https://img.shields.io/badge/OS-Kali_Linux_2026.2-orange?style=flat-square) ![Skill: Linux](https://img.shields.io/badge/Skill-Linux-grey?style=flat-square) ![Network: 10.0.0.0/24](https://img.shields.io/badge/Network-10.0.0.0%2F24-teal?style=flat-square) ![Focus: Penetration Testing](https://img.shields.io/badge/Focus-Penetration_Testing-darkred?style=flat-square) ![Skill: Virtualization](https://img.shields.io/badge/Skill-Virtualization-purple?style=flat-square) ![Platform: GitHub](https://img.shields.io/badge/Platform-GitHub-black?style=flat-square)
 
 ---
+# 📌 Overview
 
-## 📌 **Project Overview**
+This project shows how I set up a simple cybersecurity laboratory using **VirtualBox** and **Kali Linux** on my **Microsoft Surface Laptop 3** (Intel Core i5, 8 GB RAM).
 
-This project focuses on **setting up a virtual cybersecurity and penetration-testing laboratory** using **VirtualBox** and **Kali Linux**.
+The main goal of this lab is to create a safe, isolated environment where I can practice network scanning, packet analysis, and vulnerability assessment without affecting my main computer.
 
-The purpose of the lab is to create a **controlled environment** where cybersecurity tools, network scanning, reconnaissance, vulnerability assessment, and other security-testing activities can be performed safely and repeatedly.
+I configured the lab on a private virtual network so I can easily add target virtual machines later for authorized security testing.
 
-The lab is configured on a **private virtual network** so that additional machines can be added later and used as targets for authorized security testing.
 
 ![Title Overview](1-Screenshot-title-image.png.png)
 
 ---
-## 🎯 **Objectives**
+# 🎯 Project Objectives
 
-The main objectives of this project are to:
-*   **Install and configure VirtualBox.**
-*   **Install/import Kali Linux as a virtual machine.**
-*   **Create a private NAT Network for the cybersecurity lab.**
-*   **Configure network connectivity for Kali Linux.**
-*   **Assign a consistent IP address to the Kali VM.**
-*   **Verify network connectivity and DNS resolution.**
-*   **Take a clean VM snapshot for recovery.**
+The primary goals for this setup were to:
+
+* Install and configure VirtualBox as the hypervisor.
+* Unpack and import the Kali Linux virtual machine.
+* Build a private NAT Network for lab traffic.
+* Assign a static IPv4 address to the Kali VM.
+* Test local gateway connectivity, internet access, and DNS resolution.
+* Save a clean VM snapshot for quick recovery.
+*
 
 
 ---
-## 🔵 **Purpose of the Lab**
+# 🔵 Lab Purpose
 
-The lab provides an **isolated and controlled environment** for cybersecurity learning and authorized security testing. It can be used for activities such as:
-*   **Network reconnaissance**
-*   **Port scanning**
-*   **Vulnerability assessment**
-*   **Packet analysis**
-*   **Web security testing**
-*   **Exploitation practice**
-*   **Security-tool experimentation**
+This lab gives me an isolated testing environment for learning and practicing core security tasks, such as:
 
-⚠️ **Important:** This laboratory must only be used for systems that you own or have explicit permission to test. Do not use the lab or its tools to attack unauthorized systems.
+* Network reconnaissance and host discovery
+* Port scanning and service enumeration
+* Vulnerability assessment
+* Packet inspection and analysis
+* Web application security testing
+* Security tool experimentation
 
+> ⚠️ **Important:** This laboratory is strictly for testing systems I own or have permission to audit. I do not use these tools on unauthorized networks.
 
 ---
 ## 🏗️ **Lab Architecture**
@@ -144,22 +144,19 @@ After manually configuring the IPv4 settings, internet connectivity failed on th
 
 ---
 
-## 💡 **What I Learned**
+# 💡 Key Concepts Learned
 
-Through this project, I learned how to create and configure a virtual environment for cybersecurity practice. The most important concepts I learned include:
+1. **NAT vs. NAT Network**
+   * A standard NAT connection isolates one VM behind the host. A NAT Network allows multiple VMs on the same virtual network to talk to each other while still routing outbound internet traffic.
 
-1.  **NAT vs NAT Network**
-    *   A standard **NAT configuration** and a **NAT Network** serve different purposes.
-    *   A **NAT Network** allows multiple VMs connected to the same virtual network to communicate with one another while providing **network address translation** for external connectivity. This makes it useful for building a **multi-machine cybersecurity laboratory**.
-2.  **Virtual Machine Networking**
-    *   I learned how **VirtualBox virtual network adapters** connect virtual machines to different types of networks and how network configuration affects communication between machines.
-3.  **Static IP Configuration**
-    *   I learned how to configure and verify **IPv4 addressing, subnet masks, gateways, and DNS settings** in Kali Linux.
-4.  **VM Snapshots**
-    *   I learned that a **clean snapshot** should be created before performing risky or experimental activities.
-    *   This provides a **known-good recovery point** for future cybersecurity exercises.
-5.  **Documentation**
-    *   I learned that **documenting commands, configuration, screenshots, problems, and solutions** is an important part of a professional cybersecurity project.
+2. **Virtual Networking Fundamentals**
+   * Learned how virtual network interfaces handle traffic routing between the host OS and virtual machines.
+
+3. **Static IP Configuration**
+   * Practiced setting up fixed IPv4 addresses, subnet masks, gateways, and DNS servers inside Linux.
+
+4. **VM Snapshots**
+   * Learned to create a clean baseline snapshot before testing tools or changing configuration files.
 
 ---
 
