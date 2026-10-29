@@ -53,7 +53,7 @@ The lab provides an **isolated and controlled environment** for cybersecurity le
 | :--- | :--- |
 | **Host OS** | **Windows 11** |
 | **Host RAM** | **8 GB** |
-| **Processor** | **Intel Core i7** |
+| **Processor** | **Intel Core i5** |
 | **Hypervisor** | **VirtualBox 7.2** |
 | **Security OS** | **Kali Linux 2026.2** |
 | **Kali RAM** | **2048 MB** |
@@ -126,13 +126,21 @@ The lab provides an **isolated and controlled environment** for cybersecurity le
 ## 🐞 **Problems Encountered & Solutions**
 
 ### **Problem 1. Internet Connectivity After Static IP Configuration**
-After manually configuring the IPv4 settings, internet connectivity may fail depending on the Kali/NetworkManager configuration.
+After manually configuring the IPv4 settings, internet connectivity failed on the Kali/NetworkManager configuration.
 
 *   **One workaround used during this lab was:**
     ```bash
     sudo nmcli connection modify "Wired connection 1" ipv4.dad-timeout 0
     ```
 *   The network connection was then restarted/rebooted and connectivity was tested again.
+
+### 2. Locating Screenshots & Moving Files Out of Kali
+* **The Challenge:** Finding where screen captures were saved inside Kali Linux's filesystem and getting them transferred to my main host laptop for documentation.
+* **How I Solved It:** Used the Linux terminal to navigate Kali's directory structure, located the saved image files, and transferred them to my host OS using shared clipboard/folder setup.
+
+### 3. Broken Image Links on GitHub (Markdown Case-Sensitivity)
+* **The Challenge:** Image previews were breaking on GitHub when previewing my documentation.
+* **How I Solved It:** I realized GitHub Markdown is strictly case-sensitive regarding relative file paths. I double-checked every image path and renamed my files to match exact lowercase/uppercase letter cases.
 
 ---
 
@@ -172,7 +180,7 @@ This laboratory is intended strictly for **education purposes only**.
 ## 👤 **Author**
 
 *   **Yvette Ayitey**
-*   **Cybersecurity Professional B084D**
+*   **Cybersecurity Internship B084D**
 *   **LinkedIn:**[https://www.linkedin.com/in/yvette-ayitey-112a29344?utm_source=share_via&utm_content=profile&utm_medium=member_android]
 
 ---
