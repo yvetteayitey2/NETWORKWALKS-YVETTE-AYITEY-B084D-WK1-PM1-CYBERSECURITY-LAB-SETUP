@@ -107,16 +107,20 @@ This lab gives me an isolated testing environment for learning and practicing co
 
 ---
 
-## 🔬 **Lab Verification**
+# 🔬 Lab Verification
 
-| 🧪 Test | 💻 Command | 🎯 Expected Result |
+I ran the following checks in the Kali terminal to confirm everything was working:
+
+| Test | Command | Expected Result |
 | :--- | :--- | :--- |
-| **Check IP address** | `ip a` | **Correct Kali IP displayed (`10.0.0.2`)** |
-| **Test gateway** | `ping 10.0.0.1` | **Successful replies** |
-| **Test Internet connectivity** | `ping 8.8.8.8` | **Successful replies** |
-| **Test DNS resolution** | `nslookup networkwalks.com` | **Domain resolves** |
-| **Verify Nmap** | `nmap --version` | **Nmap version displayed** |
-| **Verify snapshot** | Restore snapshot and run `ip a` | **Baseline configuration restored** |
+| **Check Static IP** | `ip a` | Shows correct IP address (`10.0.0.2`)|
+| **Ping Gateway** | `ping 10.0.0.1` | Receives replies from default gateway|
+| **Ping Internet** | `ping 8.8.8.8` | Receives replies from public DNS |
+| **Test DNS Resolution** | `nslookup google.com` | Resolves domain name to IP|
+| **Check Nmap** | `nmap --version` | Displays installed Nmap version |
+| **Verify Restore Point** | Restore snapshot & run `ip a` | Restores network settings to baseline|
+
+---
 
 ---
 
