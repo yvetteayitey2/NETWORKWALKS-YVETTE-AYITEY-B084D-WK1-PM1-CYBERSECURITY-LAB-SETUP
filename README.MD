@@ -7,7 +7,7 @@ Building an isolated virtual lab for penetration testing and ethical hacking pra
 ---
 # 📌 Overview
 
-This project shows how I set up a simple cybersecurity laboratory using **VirtualBox** and **Kali Linux** on my **Microsoft Surface Laptop 3** (Intel Core i5, 8 GB RAM).
+This project shows how I set up a virtual cybersecurity laboratory using **VirtualBox** and **Kali Linux** 
 
 The main goal of this lab is to create a safe, isolated environment where I can practice network scanning, packet analysis, and vulnerability assessment without affecting my main computer.
 
@@ -65,48 +65,45 @@ This lab gives me an isolated testing environment for learning and practicing co
 
 
 ---
-## 🛠️ **Lab Setup Procedure**
+# 🛠️ Setup Steps
 
-### **Step 1. Install 7-Zip**
-*   **7-Zip** was installed to extract the Kali Linux virtual-machine package, which may be distributed as a **`.7z` archive**.
-*   **Tool:** **7-Zip**
+### Step 1. Install 7-Zip
+* Installed **7-Zip** to extract compressed `.7z` virtual machine files.
 
-### **Step 2. Install VirtualBox**
-*   **VirtualBox** was installed as the hypervisor.
+### Step 2. Install VirtualBox
+* Installed **VirtualBox** to act as the hypervisor for managing guest virtual machines.
 
-### **Step 3. Create the NAT Network**
-*   A dedicated **NAT Network** was created in VirtualBox.
-*   **Configuration:** 
-    *   **Network Name:** `NatNetwork` 
-    *   **IPv4 Prefix:** `10.0.0.0/24` 
-    *   **DHCP:** `Enabled` 
-    *   **IPv6:** `Disabled`
+### Step 3. Create the NAT Network
+* Set up a dedicated **NAT Network** in VirtualBox so guest VMs can communicate locally while sharing internet access.
+* **Network Settings:**
+  * **Network Name:** `NatNetwork`
+  * **IPv4 Prefix:** `10.0.0.0/24`
+  * **DHCP Server:** Enabled
+  * **IPv6 Support:** Disabled
 
 ![Network Settings](2-Screenshot-network-settings-1.png)
 
-### **Step 4. Import Kali Linux**
-*   The **Kali Linux virtual machine** was downloaded from the official Kali Linux website and imported into VirtualBox.
-*   The VM network adapter was configured as follows:
-    *   **Adapter 1:** Attached to **NAT Network** (`NatNetwork`)
-    *   **Adapter Type:** **Intel PRO/1000 MT Desktop**
-*   The VM was allocated **2048 MB RAM**.
+### Step 4. Import Kali Linux VM
+* Downloaded the official Kali Linux image and imported it into VirtualBox.
+* Configured the VM hardware settings:
+  * **Network Adapter 1:** Attached to `NatNetwork` (Intel PRO/1000 MT Desktop)
+  * **RAM Allocation:** 2048 MB
 
 ![Kali Linux Desktop](3-Screenshot-kali-linux.png.png)
 
-### **Step 5. Configure the Kali Linux Network**
-*   The **Kali Linux network configuration** was checked and configured with a **consistent IPv4 address**.
-*   **Example configuration:**
-    *   **IP Address:** `10.0.0.2`
-    *   **Subnet Mask:** `255.255.255.0`
-    *   **Gateway:** `10.0.0.1`
-    *   **DNS:** `8.8.8.8`
+### Step 5. Configure Network Settings in Kali
+* Configured the Kali Linux network adapter with a fixed static IPv4 address:
+  * **IP Address:** `10.0.0.2`
+  * **Subnet Mask:** `255.255.255.0`
+  * **Gateway:** `10.0.0.1`
+  * **DNS:** `8.8.8.8`
 
 ![Kali Network Settings](4-Screenshot-kali-network-settings.png.png)
 
-### **Step 6. Create a Clean VM Snapshot**
-*   After completing the initial configuration, a VirtualBox snapshot was created.
-*   **Example snapshot name:** **`fresh-Kali - Network Setup`**
-*   The snapshot represents the **clean baseline** of the laboratory. If a future exercise changes or damages the VM configuration, the machine can be restored to this baseline.
+### Step 6. Create a Clean Snapshot
+* Created a VirtualBox snapshot named `fresh-Kali - Network Setup`.
+* This snapshot serves as a clean restore point if future lab work breaks the VM configuration.
+*
 
 ---
 
